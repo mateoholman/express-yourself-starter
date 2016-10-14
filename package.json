@@ -1,0 +1,28 @@
+{
+  "name": "express-yourself-starter",
+  "version": "1.0.0",
+  "description": "A starter app for the ACA full stack express your self project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateoholman/express-yourself-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mateoholman/express-yourself-starter/issues"
+  },
+  "homepage": "https://github.com/mateoholman/express-yourself-starter#readme",
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

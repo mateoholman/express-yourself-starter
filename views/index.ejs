@@ -4,11 +4,24 @@
   <meta charset="UTF-8">
   <title>My First Express App</title>
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="./css/custom.css" type="text/css">
+  <link rel="stylesheet" href="/custom.css" type="text/css">
 </head>
 <body>
-  <% names.forEach(function(name) { %>
-  <h2>Hello, <%= name %></h2>
-  <% }) %>
+  <img src=<%= avatar %> alt='Avatar' />
+  <p><%= greeting %></p>
+  <h2><%= weapons.title %></h2>
+  <ul>
+    <% weapons.items.forEach(function(name) { %>
+      <li> <%= name %> </li>
+    <% }) %>
+  </ul>
+
+  <h2><%= vehicles.title %></h2>
+  <ul>
+    <% vehicles.items.forEach(function(name) { %>
+      <li> <%= name %> </li>
+    <% }) %>
+  </ul>
+
 </body>
 </html>

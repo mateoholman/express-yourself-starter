@@ -1,3 +1,5 @@
+"use strict";
+
 // dependencies from node
 const path = require('path');
 
@@ -9,11 +11,11 @@ const ghAvatar = require('gh-avatar');
 // Initialize our app
 const app = express();
 
-var avatarURL = 'https://avatars.githubusercontent.com/u/12854015?v=3';
+let avatarURL;
 
 // Initialize our GH avatar
 ghAvatar('mateoholman').then(avatar => {
-    console.log(avatar);
+    avatarURL = avatar;
 });
 
 // Set our views directory
